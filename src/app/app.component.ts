@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'property-binding-image-size';
+  isDisabled:boolean=true;
+
+  toggleDisable(){
+    this.isDisabled = !this.isDisabled
+  }
 }
