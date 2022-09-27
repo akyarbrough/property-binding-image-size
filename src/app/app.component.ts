@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title:string = "header"
+
+  changeTitle(e){
+    this.title=e.target.value
+  }
+
 }
 
