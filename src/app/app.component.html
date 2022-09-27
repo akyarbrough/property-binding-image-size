@@ -1,7 +1,5 @@
-<!-- Property Binding-->
-<input type="text" [disabled] = "isDisabled">
+<h1>{{ title }}</h1>
 
-<!-- Event Binding-->
-<button (click)="toggleDisable()">Click me to change the value of isDisabled</button>
+<input type="text"
+[(ngModel)]="title">
 
-<p>{{isDisabled ? 'Currently Disabled' : 'Not Disabled' }}</p>
